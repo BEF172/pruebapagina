@@ -164,6 +164,7 @@ p {
     text-align: justify;
     white-space: normal;
     margin-right: 30px;
+    word-wrap: break-word;
 }
 
 /* Estilos para los títulos de sección h2 */
