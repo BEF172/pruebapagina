@@ -1,51 +1,53 @@
-// Esta parte del código se encarga de mostrar u ocultar el botón de "subir" basado en la posición de desplazamiento vertical de la página.
-window.addEventListener('scroll', function () {
+// Función que muestra u oculta el botón de "subir" basado en la posición de desplazamiento vertical de la página.
+function toggleScrollButton() {
     // Verifica si la posición de desplazamiento vertical es mayor que 500 píxeles.
-    if (window.scrollY > 500) {
-        // Si es mayor, agrega la clase 'show' al elemento con la clase '.boton_contenedor'.
+    if (window.scrollY > 500 || document.documentElement.scrollTop > 500) {
+        // Si es mayor, muestra el botón.
         document.querySelector('.boton_contenedor').classList.add('show');
     } else {
-        // Si es menor o igual a 500 píxeles, elimina la clase 'show' del elemento con la clase '.boton_contenedor'.
+        // Si es menor o igual a 500 píxeles, oculta el botón.
         document.querySelector('.boton_contenedor').classList.remove('show');
     }
-});
+}
 
-// Esta parte del código maneja el desplazamiento suave cuando se hace clic o toca el botón.
-document.querySelector('.boton_contenedor').addEventListener('click', scrollToTop);
-document.querySelector('.boton_contenedor').addEventListener('touchstart', scrollToTop);
+// Agrega un evento que se activa cuando se realiza un desplazamiento en la página.
+window.addEventListener('scroll', toggleScrollButton);
 
-// Esta función realiza el desplazamiento suave hacia arriba.
-function scrollToTop() {
-    // Obtiene la posición actual de desplazamiento vertical.
-    const inicio = window.scrollY;
-    // Define el objetivo de desplazamiento, que es 0 (la parte superior de la página).
-    const objetivo = 0;
-    // Calcula la distancia que se debe recorrer desde la posición actual hasta el objetivo.
-    const distancia = objetivo - inicio;
-    // Obtiene el tiempo de inicio de la animación.
-    const tiempoInicio = performance.now();
+// Bandera para controlar el estado de animación del botón
+let isAnimating = false;
 
-    // Función que define una curva de aceleración para la animación (en este caso, easeOutQuad).
+// Esta función realiza el desplazamiento suave hacia arriba cuando se hace clic en el botón.
+function scrollToTop(duration) {
+    if (isAnimating) return; // Evita iniciar otra animación si ya está en curso
+    isAnimating = true;
+
+    const start = window.scrollY || document.documentElement.scrollTop;
+    const target = 0;
+    const distance = target - start;
+    const startTime = performance.now();
+
     function easeOutQuad(t, b, c, d) {
         t /= d;
         return -c * t * (t - 2) + b;
     }
 
-    // Función que anima el desplazamiento.
     function animateScroll() {
-        // Obtiene el tiempo actual.
-        const tiempoActual = performance.now();
-        // Calcula el tiempo transcurrido desde el inicio de la animación.
-        const tiempoTranscurrido = tiempoActual - tiempoInicio;
-        // Calcula la nueva posición de desplazamiento vertical utilizando la función de curva de aceleración.
-        window.scrollTo(0, easeOutQuad(tiempoTranscurrido, inicio, distancia, 1000));
+        const currentTime = performance.now();
+        const elapsedTime = currentTime - startTime;
+        window.scroll(0, easeOutQuad(elapsedTime, start, distance, duration));
 
-        // Si no se ha alcanzado la duración deseada, solicita el siguiente cuadro de animación.
-        if (tiempoTranscurrido < 1000) {
+        if (elapsedTime < duration) {
             requestAnimationFrame(animateScroll);
+        } else {
+            isAnimating = false; // La animación ha terminado
         }
     }
 
-    // Inicia la animación solicitando el primer cuadro de animación.
     requestAnimationFrame(animateScroll);
 }
+
+// Agrega un evento que se activa cuando se hace clic en el botón de "subir".
+document.querySelector('.boton_contenedor').addEventListener('click', () => {
+    // Llama a la función para desplazar suavemente hacia arriba.
+    scrollToTop(1000); // 1000 milisegundos (1 segundo) para volver arriba
+});
