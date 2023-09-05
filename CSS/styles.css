@@ -125,7 +125,7 @@ h3 {
 a.nav-link.link-conectores,
 a.nav-link.link-tecnologias,
 a.nav-link.link-acercade,
-a.nav-link {
+a.nav-link.link-inicio {
     color: white;
 }
 
@@ -323,6 +323,7 @@ section h2 {
     background-color: white;
     border-radius: 15px;
     transition: all 0.3s ease;
+    position:static;
 }
 
 /* Estilos al pasar el cursor sobre las imágenes de conectores */
@@ -331,6 +332,8 @@ section h2 {
 .hdmifoto img:hover,
 .dvifoto img:hover {
     transform: scale(1.2);
+    cursor: pointer;
+    margin-bottom: 10%;
 }
 
 /* Estilos adicionales para las imágenes de conectores */
@@ -540,10 +543,25 @@ section h2 {
     margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
+    padding: 10px;
+    background-color: #084581;
+    box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 /* Estilos para el título de la sección de pantallas */
 .titulo-pantalla {
+    font-family: 'helveticablack', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    background-color: #05498d;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-principalpantallas {
     font-family: 'helveticablack', sans-serif;
     color: white;
     background-color: #05498d;
@@ -570,14 +588,7 @@ section h2 {
 }
 
 /* Estilos para el título de las tablas */
-.titulo-tabla {
-    font-family: 'helveticablack', sans-serif;
-    color: white;
-    background-color: #05498d;
-    padding: 15px;
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
+
 
 /* Estilos para las tablas y sus contenidos */
 .tablas {
@@ -649,4 +660,27 @@ aside {
     color: rgb(255, 255, 255);
     margin-left: 8%;
     margin-right: 8%;
+}
+
+.titulo-tabla {
+    font-family: 'helveticablack', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    background-color: #05498d;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.titulo-principalpantallas {
+    font-family: 'helveticablack', sans-serif;
+    color: white;
+    background-color: #05498d;
+    padding: 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: fit-content;
 }

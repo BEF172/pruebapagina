@@ -45,7 +45,7 @@ function scrollToTop(duration) {
 }
 
 // Agrega un evento que se activa cuando se hace clic en el botón de "subir".
-document.querySelector('.boton_contenedor').addEventListener('click', () => {
+document.querySelector('.botonarriba').addEventListener('click', () => {
     scrollToTop(1000);
 });
 
