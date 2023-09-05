@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Resetear márgenes, rellenos y estilos de lista para todos los elementos */
 * {
     margin: 0;
     padding: 0;
@@ -6,36 +6,37 @@
     list-style: none;
 }
 
-
+/* Estilos para la barra de desplazamiento de Webkit */
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: transparent;
-    /* Cambiado a transparente */
 }
 
-
+/* Estilos para la barra de desplazamiento de Webkit */
 ::-webkit-scrollbar {
     width: 8px;
     background-color: #F5F5F5;
 }
 
+/* Estilos para el pulgar de la barra de desplazamiento de Webkit */
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #0559ad;
 }
 
-/* Fuentes personalizadas */
+/* Definir una fuente personalizada llamada 'HelveticaNowText Black' */
 @font-face {
     font-family: 'HelveticaNowText Black';
     src: url('HelveticaNowText-Black.otf') format('opentype');
 }
 
-/* Estilos del cuerpo */
+/* Estilos generales del cuerpo del documento */
 body {
     background-color: white;
     font-size: 1.19em;
 }
 
+/* Estilos para el contenedor principal de la página de inicio */
 .container.py-4.index {
     background-color: #0559ad;
     margin: 0;
@@ -43,6 +44,7 @@ body {
     margin: auto;
 }
 
+/* Estilos para las secciones de tecnologías, conectores, origen y ergonomía */
 .tecnologias,
 .conectores2,
 .conectores,
@@ -54,47 +56,38 @@ body {
     margin: auto;
 }
 
-/* Estilos para las secciones .tecnologias, .conectores y .origen */
+/* Estilos para las secciones de tecnologías, conectores, origen y ergonomía usando un diseño de cuadrícula */
 .tecnologias,
 .conectores,
 .origen,
 .ergonomia {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    /* Divide en 3 columnas de igual ancho */
     grid-template-rows: auto;
-    /* Ajusta la altura automáticamente */
     grid-gap: 1px;
-    /* Espacio entre las celdas */
     justify-content: center;
-    /* Centra las columnas horizontalmente */
     align-items: center;
-    /* Centra las filas verticalmente */
     padding: 20px;
-    /* Espaciado alrededor del contenido */
     text-align: center;
-    /* Alineación del contenido en el centro */
 }
 
-/* Estilos para las imágenes de .tecnologias, .conectores y .origen */
+/* Estilos para las imágenes en las secciones de tecnologías, origen, conectores y ergonomía */
 .tecnologiafoto,
 .origenfoto,
 .conectoresfoto,
 .ergonomiafoto {
     max-width: 100%;
-    /* Ajusta el ancho máximo al tamaño del contenedor */
     height: auto;
-    /* Mantiene la proporción de aspecto original */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos para enlaces */
+/* Estilos para los enlaces (hipervínculos) */
 a {
     text-decoration: none;
     color: white;
 }
 
-/* Estilos para la barra de navegación */
+/* Estilos para la barra de navegación en la parte superior */
 nav {
     display: flex;
     background-color: #0559ad;
@@ -109,7 +102,7 @@ nav {
     z-index: 2;
 }
 
-/* Estilos para la lista de navegación */
+/* Estilos para la lista de elementos de navegación en la barra de navegación */
 nav ul {
     list-style: none;
     display: flex;
@@ -117,7 +110,7 @@ nav ul {
     padding: 0;
 }
 
-/* Estilos para los enlaces de navegación y los títulos h3 */
+/* Estilos para los enlaces de navegación y encabezados de nivel 3 */
 nav a,
 h3 {
     text-decoration: none;
@@ -128,6 +121,7 @@ h3 {
     border-radius: 40px;
 }
 
+/* Estilos específicos para algunos enlaces de navegación */
 a.nav-link.link-conectores,
 a.nav-link.link-tecnologias,
 a.nav-link.link-acercade,
@@ -135,15 +129,15 @@ a.nav-link {
     color: white;
 }
 
-/* Estilos en el estado hover de los enlaces de navegación */
+/* Estilos al pasar el cursor sobre los enlaces de navegación */
 nav a:hover {
     margin: 0;
     background-color: #05498d;
 }
 
-/* Estilos para los títulos h2 */
+/* Estilos para los títulos de secciones */
 .titulo-tecnologias,
-.titulocontenidoconectores,
+.tituloVGACONTENIDO,
 .titulo-ergonomia,
 .titulo-conectores,
 .titulocontenidopantallas {
@@ -157,7 +151,7 @@ nav a:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos para los párrafos */
+/* Estilos para párrafos de texto */
 p {
     font-family: 'Helvetica Light', sans-serif;
     color: rgb(255, 255, 255);
@@ -167,11 +161,12 @@ p {
     word-wrap: break-word;
 }
 
-/* Estilos para los títulos de sección h2 */
+/* Estilos para títulos de nivel 2 dentro de secciones */
 section h2 {
     text-align: center;
 }
 
+/* Estilos para el botón de volver arriba */
 .boton_contenedor {
     position: fixed;
     bottom: 2%;
@@ -181,6 +176,7 @@ section h2 {
     z-index: 1;
 }
 
+/* Estilos para el botón de volver arriba cuando está oculto */
 .botonarriba {
     width: 0rem;
     height: 0rem;
@@ -194,6 +190,7 @@ section h2 {
     z-index: 1;
 }
 
+/* Estilos para el ícono dentro del botón de volver arriba */
 .botonarriba i {
     position: absolute;
     font-size: 1.7rem;
@@ -204,10 +201,12 @@ section h2 {
     transition: .2s;
 }
 
+/* Estilos para mostrar el botón de volver arriba */
 .show {
     z-index: 10;
 }
 
+/* Estilos para animar la aparición del botón de volver arriba */
 .show .botonarriba {
     animation: popup .3s ease-in-out;
     width: 70px;
@@ -215,44 +214,40 @@ section h2 {
     z-index: 11;
 }
 
+/* Estilos para animar el ícono dentro del botón de volver arriba */
 .show i {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/* Animación keyframes para mostrar el botón de volver arriba */
 @keyframes popup {
     0% {
         width: 0rem;
         height: 0rem;
     }
-
     50% {
         width: 15px;
         height: 15px;
     }
-
     100% {
         width: 6.6rem;
         height: 6.6rem;
     }
 }
 
-/* Estilos para la sección .conectores2 */
+/* Estilos para la sección de conectores2 */
 .conectores2 {
     background-color: #0559ad;
     max-width: 90%;
-    /* Padding ajustado para mantener el ancho dentro del 100% del contenedor principal */
     padding: 20px 1%;
     text-align: center;
     margin: auto;
     display: flex;
     flex-direction: column;
-    /* Alinea los elementos en columna */
     align-items: center;
-    /* Centra horizontalmente */
 }
 
-
-/* Estilos para el título .titulo-conectores2 */
+/* Estilos para el título de la sección de conectores2 */
 .titulo-conectores2 {
     font-family: 'helveticablack', sans-serif;
     color: white;
@@ -262,35 +257,56 @@ section h2 {
     margin-bottom: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     width: fit-content;
-    /* Ajustar el ancho al contenido */
 }
 
 /* Estilos para el contenedor de conectores */
 .conectores-container {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que los conectores se envuelvan cuando no haya suficiente espacio */
     justify-content: center;
-    /* Centra los conectores horizontalmente */
 }
 
-/* Estilos para cada conector */
-.conector {
+/* Estilos para las imágenes de conectores */
+.vgafoto,
+.displayportfoto,
+.hdmifoto,
+.dvifoto {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 10px 20px;
-    /* Espacio entre los conectores */
 }
 
-/* Estilos para las imágenes de los conectores */
-.conector img {
+/* Estilos para las imágenes dentro de los contenedores de conectores */
+.vgafoto img,
+.displayportfoto img,
+.hdmifoto img,
+.dvifoto img {
     width: 80%;
     max-height: 200px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 15px;
 }
 
-/* Estilos para el texto de los conectores */
+/* Estilos al pasar el cursor sobre las imágenes de conectores */
+.vgafoto img:hover,
+.displayportfoto img:hover,
+.hdmifoto img:hover,
+.dvifoto img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos adicionales para las imágenes de conectores */
+.vgafoto img,
+.displayportfoto img,
+.hdmifoto img,
+.dvifoto img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Estilos para los párrafos de texto en la sección de conectores */
 .conector p {
     font-family: 'Helvetica Light', sans-serif;
     color: rgb(255, 255, 255);
@@ -300,26 +316,21 @@ section h2 {
     margin-top: 10px;
 }
 
-/* Estilos para el contenedor de video en la clase .VGA */
+/* Estilos para los contenedores de video en las secciones de conectores */
 .VGA .video-container,
 .DVI .video-container,
 .HDMI .video-container,
 .Displayport .video-container {
     position: relative;
     width: 80%;
-    /* Reducir el ancho del contenedor */
     margin: 0 auto;
-    /* Centrar horizontalmente el contenedor */
     height: 315px;
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
 }
 
-
-
+/* Estilos para los iframes de video en las secciones de conectores */
 .VGA .video-container iframe,
 .DVI .video-container iframe,
 .HDMI .video-container iframe,
@@ -330,9 +341,9 @@ section h2 {
     width: 100%;
     height: 100%;
     padding-bottom: 10px;
-    /* Agregar un borde azul para destacar el iframe */
 }
 
+/* Estilos para la sección de contenido de conectores */
 .contenidoconectores {
     padding-bottom: 20px;
     text-align: center;
@@ -342,6 +353,7 @@ section h2 {
     max-height: 100%;
 }
 
+/* Estilos adicionales para la sección de contenido de conectores y pantallas */
 .contenidoconectores,
 .contenidopantalla {
     background-color: #0559ad;
@@ -352,8 +364,11 @@ section h2 {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-.parrafoconectores {
+/* Estilos para los párrafos de texto en la sección de conectores */
+.parrafoconectores,
+.parrafoVGACONTENIDO, .parrafoDVICONTENIDO,
+.parrafoHDMICONTENIDO,
+.parrafoDISPLAYPORTCONTENIDO {
     font-family: 'Helvetica Light', sans-serif;
     color: rgb(255, 255, 255);
     white-space: normal;
@@ -365,9 +380,9 @@ section h2 {
     background-color: #084581;
     box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-
 }
 
+/* Estilos para la sección de bienvenida */
 #bienvenida-section {
     background-color: #053d76;
     width: 100%;
@@ -375,27 +390,23 @@ section h2 {
     position: absolute;
 }
 
+/* Estilos para la sección "Acerca de" */
 #acerca-de {
     background-color: #f8f9fa;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: relative;
-    /* Deja esta línea para evitar que bienvenida-section cubra acerca-de */
     top: 100px;
-    /* Ajusta este valor para mover la sección hacia abajo */
     z-index: 1;
-    /* Asegura que acerca-de esté por encima de bienvenida-section */
 }
 
-
+/* Estilos para el contenedor de información dentro de "Acerca de" */
 .informacion {
     top: 50px;
     position: absolute;
     border: 7px solid blue;
-    /* Agrega un borde azul de 2px alrededor del contenedor */
     border-radius: 10px;
-    /* Añade bordes redondeados */
     padding-left: 1%;
     padding-right: 1%;
     background-color: #ffffff;
@@ -405,6 +416,7 @@ section h2 {
     text-align: left;
 }
 
+/* Estilos para los títulos dentro de "Acerca de" */
 /* Estilos para la sección Acerca de mí */
 #acerca-de {
     background-color: #f8f9fa;
@@ -458,6 +470,7 @@ section h2 {
     /* Subrayado al pasar el cursor */
 }
 
+/* Estilos para la sección de contenido de pantallas */
 .contenidopantallas {
     padding-bottom: 20px;
     text-align: center;
@@ -467,6 +480,7 @@ section h2 {
     max-height: 100%;
 }
 
+/* Estilos adicionales para la sección de contenido de pantallas */
 .contenidopantallas {
     background-color: #0559ad;
     max-width: 90%;
@@ -477,11 +491,10 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centra horizontalmente */
     justify-content: center;
-    /* Centra verticalmente */
 }
 
+/* Estilos para los párrafos de texto en la sección de contenido de pantallas */
 .parrafopantallas {
     font-family: 'Helvetica Light', sans-serif;
     color: rgb(255, 255, 255);
@@ -492,6 +505,7 @@ section h2 {
     margin-right: 10%;
 }
 
+/* Estilos para el título de la sección de pantallas */
 .titulo-pantalla {
     font-family: 'helveticablack', sans-serif;
     color: white;
@@ -503,38 +517,32 @@ section h2 {
     width: fit-content;
 }
 
+/* Estilos para la relación de aspecto de las pantallas */
 .relacionaspecto {
     width: 90%;
     height: 30vw;
 }
 
+/* Estilos para las tablas */
 .table {
     flex: 1;
     text-align: center;
     padding: 10px;
-    /* Agrega espacio entre las columnas */
     background-color: white;
     border-radius: 30px;
-
 }
 
-.conector img {
-    width: 200px;
-    /* Establece el ancho deseado */
-    height: 200px;
-    /* Establece la altura deseada */
-}
-
+/* Estilos para el título de las tablas */
 .titulo-tabla {
     font-family: 'helveticablack', sans-serif;
     color: white;
     background-color: #05498d;
     padding: 15px;
     border-radius: 30px;
-
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Estilos para las tablas y sus contenidos */
 .tablas {
     background-color: #0559ad;
     max-width: 90%;
@@ -543,21 +551,20 @@ section h2 {
     margin: auto;
     display: flex;
     align-items: center;
-    /* Centra horizontalmente */
     justify-content: center;
-
-    /* Centra verticalmente */
 }
 
+/* Estilos para la última fila de una tabla */
 .ultima {
     border-bottom: 1px solid transparent;
 }
 
+/* Estilos para la barra lateral (aside) */
 aside {
     margin-left: -15px;
-    /* Agrega un margen izquierdo negativo */
 }
 
+/* Estilos para los elementos dentro del aside */
 .xd {
     background-color: white;
     border-radius: 15px;
@@ -568,24 +575,24 @@ aside {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
+/* Estilos para los párrafos dentro del aside */
 .parrafoaside {
     color: black;
 }
 
+/* Estilos para los títulos dentro del aside */
 .tituloaside {
     color: black;
 }
 
-/* Estilos para centrar el texto dentro de los elementos h3 y p */
 .xd h3,
 .xd p {
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
-    margin-left: 10%;
     word-spacing: normal;
-    margin-right: 10%;
 }
 
+/* Estilos para la lista de elementos de interés */
 .intereslista a {
     display: block;
     text-decoration: none;
@@ -597,11 +604,12 @@ aside {
     margin-bottom: 10px;
     padding-bottom: 2px;
     padding: 10px;
-    transition: all 0.3s ease; /* Transición para todos los atributos con duración de 0.3s y función de temporización ease */
+    transition: all 0.3s ease;
 }
 
+/* Estilos al pasar el cursor sobre los elementos de interés */
 .intereslista a:hover {
     color: rgb(255, 255, 255);
-    margin-left: 8%; /* Aplicamos los valores de estirar en el hover */
+    margin-left: 8%;
     margin-right: 8%;
 }

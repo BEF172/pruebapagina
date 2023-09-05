@@ -2,21 +2,21 @@
 <html lang="es">
 
 <head>
-
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
-    <link rel="icon" href="IMAGENES/logo.png" type="image/png">
-    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlaces a hojas de estilo y recursos externos -->
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css"> <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css"> <!-- Iconos FontAwesome -->
+    <link rel="icon" href="IMAGENES/logo.png" type="image/png"> <!-- Ícono de la pestaña del navegador -->
+    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
+    <!-- Título de la página -->
     <title>MONITORES</title>
 </head>
 
 <body>
-    <div class="scrollbar" id="style-2">
-        <div class="force-overflow"></div>
-    </div>
+    <!-- Encabezado de la página -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -27,14 +27,14 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Menú de navegación -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link link-tecnologias" href="tecnologiapantallas.html">Tecnologías de Pantallas</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-conectores" href="conectores.html" class="link-conectores">Fichas de Conectores</a>
-                            
+                            <a href="conectores.html" class="nav-link link-conectores">Fichas de Conectores</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link-acercade" href="acercade.html">Acerca de</a>
@@ -44,7 +44,8 @@
             </div>
         </nav>
     </header>
-    
+
+    <!-- Sección de Tecnologías de Pantallas y Resoluciones -->
     <section class="container py-4 index">
         <div class="row">
             <div class="col-md-4">
@@ -53,16 +54,18 @@
             <div class="col-md-4">
                 <p class="texto-tecnologias">Sumérgete en el mundo de las pantallas de alta tecnología. Explora cómo las
                     tecnologías LED, OLED y LCD han revolucionado la calidad visual en los monitores modernos. Aprende
-                    sobre las
-                    diferentes resoluciones, desde HD hasta 8K, y cómo afectan la experiencia visual en diversas tareas.
+                    sobre las diferentes resoluciones, desde HD hasta 8K, y cómo afectan la experiencia visual en
+                    diversas tareas.
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid tecnologiafoto" src="IMAGENES/resoluciones-hd.png" alt="Conectores de Monitores">
+                <img class="img-fluid tecnologiafoto" src="IMAGENES/resoluciones-hd.png"
+                    alt="Conectores de Monitores">
             </div>
         </div>
     </section>
 
+    <!-- Sección de Fichas de Conectores de los Monitores -->
     <section class="container py-4 index">
         <div class="row">
             <div class="col-md-4">
@@ -79,35 +82,36 @@
             </div>
         </div>
     </section>
+
+    <!-- Sección de Ergonomía de las Pantallas -->
     <section class="container py-4 index">
         <div class="row">
             <div class="col-md-4">
-                <h2 class="titulo-ergonomia">Ergonomia de la pantallas</h2>
+                <h2 class="titulo-ergonomia">Ergonomía de la pantallas</h2>
             </div>
             <div class="col-md-4">
                 <p class="texto-ergonomia">El monitor que eliges y cómo lo utilices influirán en tu salud. Así de claro.
-                    Tus
-                    hombros cargados, tu vista cansada, tus posibles mareos muy probablemente se deban a un mal “setup”,
-                    una
-                    combinación de monitor incómodo y postura forzada. ¿Qué debes tener en cuenta entonces? La clave
-                    está en
-                    la
-                    ergonomía.</p>
+                    Tus hombros cargados, tu vista cansada, tus posibles mareos muy probablemente se deban a un mal
+                    “setup”, una combinación de monitor incómodo y postura forzada. ¿Qué debes tener en cuenta entonces?
+                    La clave está en la ergonomía.</p>
             </div>
             <div class="col-md-4">
                 <img class="img-fluid ergonomiafoto" src="IMAGENES/ergonomia.png" alt="Conectores de Monitores">
             </div>
         </div>
     </section>
+
+    <!-- Botón de regreso arriba -->
     <div class="boton_contenedor">
         <div class="botonarriba">
             <i class="fas fa-chevron-up"></i>
         </div>
     </div>
-    <script src="JS/boton.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts JavaScript -->
+    <script src="JS/boton.js"></script> <!-- Script para el botón de regreso arriba -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Biblioteca jQuery -->
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JavaScript -->
 </body>
 
 </html>
-</script>

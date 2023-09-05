@@ -2,17 +2,23 @@
 <html lang="es">
 
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
-    <link rel="icon" href="IMAGENES/logo.png" type="image/png">
-    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlaces a hojas de estilo y recursos externos -->
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css"> <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css"> <!-- Iconos FontAwesome -->
+    <link rel="icon" href="IMAGENES/logo.png" type="image/png"> <!-- Ícono de la pestaña del navegador -->
+    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
+
+    <!-- Título de la página -->
     <title>MONITORES</title>
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -23,14 +29,14 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Menú de navegación -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link link-inicio" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-tecnologias" href="tecnologiapantallas.html">Tecnologías de
-                                Pantallas</a>
+                            <a class="nav-link link-tecnologias" href="tecnologiapantallas.html">Tecnologías de Pantallas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link-acercade" href="acercade.html">Acerca de</a>
@@ -41,29 +47,31 @@
         </nav>
     </header>
 
+    <!-- Sección de conectores -->
     <section class="container conectores2">
         <h2 class="titulo-conectores2">Conectores existentes</h2>
         <div class="row">
+            <!-- Cuatro columnas con imágenes y descripciones de conectores -->
             <div class="col-md-3">
-                <div class="conector">
+                <div class="vgafoto" id="vgafoto">
                     <img src="IMAGENES/VGA2.jpg" alt="VGA" class="img-fluid">
                     <p>VGA</p>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="conector">
+                <div class="dvifoto" id="dvifoto">
                     <img width="200" height="200" src="IMAGENES/DVI.jpg" alt="DVI" class="img-fluid">
                     <p>DVI</p>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="conector">
+                <div class="hdmifoto" id="hdmifoto">
                     <img src="IMAGENES/hdmi.jpg" alt="HDMI" class="img-fluid">
                     <p>HDMI</p>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="conector">
+                <div class="displayportfoto" id="displayportfoto">
                     <img src="IMAGENES/displayport.jpeg" alt="DisplayPort" class="img-fluid">
                     <p>DisplayPort</p>
                 </div>
@@ -71,15 +79,19 @@
         </div>
     </section>
 
+    <!-- Sección de contenido de conectores -->
     <section class="container contenidoconectores">
         <div class="row">
+            <!-- Columna principal de contenido -->
             <div class="col-md-9 pr-md-4">
-                <h2 class="titulocontenidoconectores">Resumen Conectores</h2>
-                <p class="parrafoconectores"><strong>VGA:</strong> Los monitores VGA o Video Graphics Array están
+                <!-- Título y párrafos informativos sobre los conectores -->
+                <h2 class="tituloVGACONTENIDO" id="VGACONTENIDO">Resumen Conectores</h2>
+                <p class="parrafoVGACONTENIDO"><strong>VGA:</strong> Los monitores VGA o Video Graphics Array están
                     actualmente fuera del mercado, por lo que no los vas a encontrar a la venta desde hace mucho. Si en
                     algún momento ves que alguien intenta venderte un monitor que cuenta con esta conexión, nuestro
                     consejo es que salgas huyendo.</p>
 
+                <!-- Contenedor de video sobre VGA -->
                 <div class="VGA">
                     <div class="video-container">
                         <iframe width="560" height="315"
@@ -88,7 +100,7 @@
                     </div>
                 </div>
 
-                <p class="parrafoconectores">Su resolución máxima fue la del <strong>Full HD</strong>, o lo que es lo
+                <p class="parrafoVGACONTENIDO">Su resolución máxima fue la del <strong>Full HD</strong>, o lo que es lo
                     mismo, 1.920 x 1.080. Mientras duró su época tenemos que reconocer que nos dio muy buenos tiempos,
                     pero con el avance de la tecnología y la mejora en la potencia gráfica, <strong>ya no existe, desde
                         hace años, como posibilidad en las tarjetas gráficas.</strong><br><br> Reconocer un monitor que
@@ -96,7 +108,8 @@
                     marcos gigantes para la pantalla que tenían.
                 </p>
 
-                <p class="parrafoconectores">
+                <!-- Párrafos informativos sobre otros conectores -->
+                <p class="parrafoDVICONTENIDO" id="DVICONTENIDO">
                     <strong>DVI:</strong> Cuando el VGA comenzó a quedarse corto para los estándares llegó el DVI, un
                     conector bastante grande que podíamos encontrar en distintos formatos: single link y dual
                     link.<br><br> Este conector estuvo un tiempo entre las posibilidades que ofrecía un monitor,
@@ -104,6 +117,7 @@
                         compatible con la analógica.</strong>
                 </p>
 
+                <!-- Contenedor de video sobre DVI -->
                 <div class="DVI">
                     <div class="video-container">
                         <iframe width="560" height="315"
@@ -112,12 +126,14 @@
                     </div>
                 </div>
 
-                <p class="parrafoconectores">
+                <!-- Más párrafos informativos sobre otros conectores -->
+                <p class="parrafoHDMICONTENIDO" id="HDMICONTENIDO">
                     <strong>HDMI:</strong> Cuando empezaron a llegar los primeros conectores HDMI, pocos adivinaron que
                     sería uno de los más utilizados durante tanto tiempo, <strong>gracias en parte a su comodidad de
                         uso</strong> y, sobre todo, a la multitud de actualizaciones que ha recibido desde entonces.
                 </p>
 
+                <!-- Contenedor de video sobre HDMI -->
                 <div class="HDMI">
                     <div class="video-container">
                         <iframe width="560" height="315"
@@ -126,7 +142,8 @@
                     </div>
                 </div>
 
-                <p class="parrafoconectores">
+                <!-- Últimos párrafos informativos sobre conectores -->
+                <p class="parrafoDISPLAYPORTCONTENIDO" id="DISPLAYPORTCONTENIDO">
                     <strong>DisplayPort:</strong> Es otro de los conectores presentes en la actualidad en prácticamente
                     cualquier lado, y que viene a resolver algunos de los problemas presentes en el HDMI como es la
                     posibilidad de <strong>transportar datos y no solo imagen y sonido.</strong><br><br> Sin embargo,
@@ -135,6 +152,7 @@
                     versión 2.0 del DisplayPort veremos qué es lo que ocurre.
                 </p>
 
+                <!-- Contenedor de video sobre DisplayPort -->
                 <div class="Displayport">
                     <div class="video-container">
                         <iframe width="560" height="315"
@@ -143,10 +161,14 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Barra lateral (aside) -->
             <aside class="col-md-3 px-md-3 aside">
                 <div class="xd text-center">
+                    <!-- Título y contenido relacionado en la barra lateral -->
                     <h3 class="tituloaside text-center">Capaz te pueda interesar...</h3>
                     <p class="parrafoaside text-center"></p>
+                    <!-- Lista de enlaces de interés -->
                     <div class="intereslista">
                         <a class="" href="tecnologiapantallas.html">Tecnologías de Pantallas</a>
                         <a class="" href="acercade.html">Acerca de</a>
@@ -156,15 +178,17 @@
         </div>
     </section>
 
+    <!-- Botón de regreso arriba -->
     <div class="boton_contenedor">
         <div class="botonarriba">
             <i class="fas fa-chevron-up"></i>
         </div>
     </div>
 
-    <script src="JS/boton.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts JavaScript -->
+    <script src="JS/boton.js"></script> <!-- Script para el botón de regreso arriba -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Biblioteca jQuery -->
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JavaScript -->
 </body>
 
 </html>
