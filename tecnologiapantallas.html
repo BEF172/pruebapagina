@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="CSS/styles.css"> <!-- Enlace a una hoja de estilos personalizada -->
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css"> <!-- Enlace a iconos FontAwesome -->
     <link rel="icon" href="IMAGENES/logo.png" type="image/png"> <!-- Icono que aparece en la pestaña del navegador -->
-    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
     <!-- Título de la página -->
     <title>MONITORES</title>
 </head>
@@ -46,155 +47,219 @@
     </header>
 
     <!-- Sección de Contenido de Pantallas -->
-    <section class="container contenidopantallas">
-        <h2 class="titulo-pantalla">Resoluciones</h2>
-        <p class="parrafopantallas">La resolución se refiere al número de píxeles que componen la imagen de una
-            pantalla. Un píxel es un pequeño punto en la pantalla.<br><br>
 
-            La resolución suele especificarse con el número de píxeles horizontales y verticales que componen la imagen,
-            por ejemplo, 1920 x 1080 píxeles. Eso significa que la pantalla tiene 1920 píxeles horizontales y 1080
-            píxeles verticales.
-        </p>
-        <h3 class="titulo-pantalla">¿Qué es la relación de aspecto de un monitor?</h3>
-        <p class="parrafopantallas">La relación de aspecto de un monitor es la representación proporcional que describe
-            la correlación entre ancho y alto de la pantalla.</p>
-        <img src="IMAGENES/relacionaspecto.jpg" class="img-fluid">
-        <p class="parrafopantallas" style="opacity: 60%; margin-top: 0;">Las relaciones de aspecto más habituales son:
-            21:9, 16:9 y 4:3. Aún hay muchas más...</p>
+    <section class="container contenidopantallas">
+        <div class="row">
+            <!-- Columna principal de contenido -->
+            <div class="col-md-12 pr-md-4">
+                <h2 class="titulo-tabla">Resoluciones</h2>
+                <p class="parrafopantallas">La resolución se refiere al número de píxeles que componen la imagen de una
+                    pantalla. Un píxel es un pequeño punto en la pantalla.<br><br>
+
+                    La resolución suele especificarse con el número de píxeles horizontales y verticales que componen la
+                    imagen,
+                    por ejemplo, 1920 x 1080 píxeles. Eso significa que la pantalla tiene 1920 píxeles horizontales y
+                    1080
+                    píxeles verticales.
+                </p>
+                <h3 class="titulo-pantalla">¿Qué es la relación de aspecto de un monitor?</h3>
+                <p class="parrafopantallas">La relación de aspecto de un monitor es la representación proporcional que
+                    describe
+                    la correlación entre ancho y alto de la pantalla.</p>
+                <img src="IMAGENES/relacionaspecto.jpg" class="img-fluid">
+                <p class="parrafopantallas" style="opacity: 60%; margin-top: 0;">Las relaciones de aspecto más
+                    habituales son:
+                    21:9, 16:9 y 4:3. Aún hay muchas más...</p>
+            </div>
+        </div>
     </section>
 
     <!-- Sección de Tablas de Resoluciones -->
     <section class="container tablas">
-        <div class="table-responsive">
-            <table class="table">
-                <!-- Cabecera de la tabla -->
-                <div class="columna">
-                    <h2 class="titulo-tabla">Resoluciones actuales</h2>
-                    <thead>
-                        <tr>
-                            <th>Resolución en píxeles</th>
-                            <th>Estándar</th>
-                            <th>Relación aspecto</th>
-                            <th>Tamaño de monitor medio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1024 x 768</td>
-                            <td>XGA</td>
-                            <td>4:3</td>
-                            <td>monitores de 14 y 15"</td>
-                        </tr>
-                        <tr>
-                            <td>1280 x 720</td>
-                            <td>WXGA</td>
-                            <td>16:9</td>
-                            <td>monitores de 17 y 19"</td>
-                        </tr>
-                        <tr>
-                            <td>1280 x 800</td>
-                            <td>WXGA</td>
-                            <td>16:10</td>
-                            <td>monitores de 17 y 19"</td>
-                        </tr>
-                        <tr>
-                            <td>1280 x 1024</td>
-                            <td>WXGA</td>
-                            <td>4:3</td>
-                            <td>monitores de 17 y 19"</td>
-                        </tr>
-                        <tr>
-                            <td>1366 x 768</td>
-                            <td>HD</td>
-                            <td>16:9</td>
-                            <td>monitores de 19 y 21"</td>
-                        </tr>
-                        <tr>
-                            <td>1600 x 900</td>
-                            <td>HD+</td>
-                            <td>16:9</td>
-                            <td>monitores de 19 y 21"</td>
-                        </tr>
-                        <tr>
-                            <td>1680 x 1050</td>
-                            <td>WSXGA+</td>
-                            <td>16:10</td>
-                            <td>monitores de 19 y 21"</td>
-                        </tr>
-                        <tr>
-                            <td>1920 x 1080</td>
-                            <td>FHD</td>
-                            <td>16:9</td>
-                            <td>monitores de 21, 24 y hasta 27"</td>
-                        </tr>
-                        <tr>
-                            <td>1920 x 1200</td>
-                            <td>WUXGA</td>
-                            <td>16:10</td>
-                            <td>monitores de 22, 24 y hasta 26"</td>
-                        </tr>
-                        <tr>
-                            <td>2560 x 1080</td>
-                            <td></td>
-                            <td>21:9</td>
-                            <td>monitores de 25, 27 y 29"</td>
-                        </tr>
-                        <tr>
-                            <td>2560 x 1440</td>
-                            <td>QHD</td>
-                            <td>16:9</td>
-                            <td>monitores de 24, 27 y 32"</td>
-                        </tr>
-                        <tr>
-                            <td>2560 x 1600</td>
-                            <td></td>
-                            <td>16:10</td>
-                            <td>monitores por encima de 26"</td>
-                        </tr>
-                        <tr>
-                            <td>3440 x 1440</td>
-                            <td>WQHD</td>
-                            <td>21:9</td>
-                            <td>monitores de 34" en adelante</td>
-                        </tr>
-                        <tr>
-                            <td>3840 x 2160</td>
-                            <td>UHD o 4K UHD</td>
-                            <td>16:9</td>
-                            <td>monitores de 27, 32" y en adelante</td>
-                        </tr>
-                        <tr>
-                            <td>4096 x 2160</td>
-                            <td>4K DCI</td>
-                            <td>19:10</td>
-                            <td>monitores de 27, 32" y en adelante</td>
-                        </tr>
-                        <tr>
-                            <td>5120 x 2160</td>
-                            <td>WUHD</td>
-                            <td>21:9</td>
-                            <td>monitores de 32" en adelante</td>
-                        </tr>
-                        <tr>
-                            <td>5120 x 2880</td>
-                            <td>5K</td>
-                            <td>16:9</td>
-                            <td>monitores por encima de 40"</td>
-                        </tr>
-                        <tr class="ultima">
-                            <td>7680 x 4320</td>
-                            <td>8K</td>
-                            <td>16:9</td>
-                            <td>monitores por encima de 50"</td>
-                        </tr>
-                    </tbody>
+        <div class="row">
+            <!-- Columna principal de contenido -->
+            <div class="col-md-12 pr-md-4">
+                <div class="table-responsive">
+                    <table class="table">
+                        <!-- Cabecera de la tabla -->
+                        <div class="columna">
+                            <h2 class="titulo-tabla">Resoluciones actuales</h2>
+                            <thead>
+                                <tr>
+                                    <th>Resolución en píxeles</th>
+                                    <th>Estándar</th>
+                                    <th>Relación aspecto</th>
+                                    <th>Tamaño de monitor medio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1024 x 768</td>
+                                    <td>XGA</td>
+                                    <td>4:3</td>
+                                    <td>monitores de 14 y 15"</td>
+                                </tr>
+                                <tr>
+                                    <td>1280 x 720</td>
+                                    <td>WXGA</td>
+                                    <td>16:9</td>
+                                    <td>monitores de 17 y 19"</td>
+                                </tr>
+                                <tr>
+                                    <td>1280 x 800</td>
+                                    <td>WXGA</td>
+                                    <td>16:10</td>
+                                    <td>monitores de 17 y 19"</td>
+                                </tr>
+                                <tr>
+                                    <td>1280 x 1024</td>
+                                    <td>WXGA</td>
+                                    <td>4:3</td>
+                                    <td>monitores de 17 y 19"</td>
+                                </tr>
+                                <tr>
+                                    <td>1366 x 768</td>
+                                    <td>HD</td>
+                                    <td>16:9</td>
+                                    <td>monitores de 19 y 21"</td>
+                                </tr>
+                                <tr>
+                                    <td>1600 x 900</td>
+                                    <td>HD+</td>
+                                    <td>16:9</td>
+                                    <td>monitores de 19 y 21"</td>
+                                </tr>
+                                <tr>
+                                    <td>1680 x 1050</td>
+                                    <td>WSXGA+</td>
+                                    <td>16:10</td>
+                                    <td>monitores de 19 y 21"</td>
+                                </tr>
+                                <tr>
+                                    <td>1920 x 1080</td>
+                                    <td>FHD</td>
+                                    <td>16:9</td>
+                                    <td>monitores de 21, 24 y hasta 27"</td>
+                                </tr>
+                                <tr>
+                                    <td>1920 x 1200</td>
+                                    <td>WUXGA</td>
+                                    <td>16:10</td>
+                                    <td>monitores de 22, 24 y hasta 26"</td>
+                                </tr>
+                                <tr>
+                                    <td>2560 x 1080</td>
+                                    <td></td>
+                                    <td>21:9</td>
+                                    <td>monitores de 25, 27 y 29"</td>
+                                </tr>
+                                <tr>
+                                    <td>2560 x 1440</td>
+                                    <td>QHD</td>
+                                    <td>16:9</td>
+                                    <td>monitores de 24, 27 y 32"</td>
+                                </tr>
+                                <tr>
+                                    <td>2560 x 1600</td>
+                                    <td></td>
+                                    <td>16:10</td>
+                                    <td>monitores por encima de 26"</td>
+                                </tr>
+                                <tr>
+                                    <td>3440 x 1440</td>
+                                    <td>WQHD</td>
+                                    <td>21:9</td>
+                                    <td>monitores de 34" en adelante</td>
+                                </tr>
+                                <tr>
+                                    <td>3840 x 2160</td>
+                                    <td>UHD o 4K UHD</td>
+                                    <td>16:9</td>
+                                    <td>monitores de 27, 32" y en adelante</td>
+                                </tr>
+                                <tr>
+                                    <td>4096 x 2160</td>
+                                    <td>4K DCI</td>
+                                    <td>19:10</td>
+                                    <td>monitores de 27, 32" y en adelante</td>
+                                </tr>
+                                <tr>
+                                    <td>5120 x 2160</td>
+                                    <td>WUHD</td>
+                                    <td>21:9</td>
+                                    <td>monitores de 32" en adelante</td>
+                                </tr>
+                                <tr>
+                                    <td>5120 x 2880</td>
+                                    <td>5K</td>
+                                    <td>16:9</td>
+                                    <td>monitores por encima de 40"</td>
+                                </tr>
+                                <tr class="ultima">
+                                    <td>7680 x 4320</td>
+                                    <td>8K</td>
+                                    <td>16:9</td>
+                                    <td>monitores por encima de 50"</td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </table>
                 </div>
-            </table>
-
+            </div>
         </div>
-
     </section>
-
+    <section class="container contenidopantallas">
+        <div class="row">
+            <!-- Columna principal de contenido -->
+            <div class="col-md-12 pr-md-4">
+                <h2 class="titulo-pantalla">720p o WXGA</h2>
+                <p class="parrafopantallas">Una pantalla de 720p suele tener una resolución de 1280 x 720 píxeles, algo
+                    menos de
+                    1 millón de píxeles (megapíxel) totales. A veces se llaman también pantallas HD o HD Ready, aunque
+                    en
+                    realidad esas suelen tener una resolución de 1366 x 768. Tampoco tiene mucha importancia. A día de
+                    hoy, son
+                    resoluciones bastante bajas y prácticamente todos los monitores de ordenador y todas las
+                    televisiones tienen
+                    resoluciones mayores.
+                </p>
+                <h2 class="titulo-pantalla">1080p o FullHD (FHD)</h2>
+                <p class="parrafopantallas">Las pantallas FullHD tienen una resolución horizontal de 1.920 píxeles y
+                    1.080
+                    píxeles de resolución vertical. Aún hay muchos monitores y televisores que utilizan esta resolución.
+                    Eso sí,
+                    yo no recomendaría comprar un monitor mayor de 24 o 27 pulgadas con esta resolución. Los píxeles son
+                    bastante grandes y, aunque en juegos no molestan, en ofimática sí que pueden notarse.
+                </p>
+                <h2 class="titulo-pantalla">QHD 1440p, la mal llamada 2K</h2>
+                <p class="parrafopantallas">Las pantallas 1440p contienen 2560 x 1440 píxeles y, con el incremento del
+                    tamaño de
+                    los monitores, cada vez es una resolución más habitual. Esta resolución también se conoce como QHD o
+                    Quad HD
+                    al tener 4 veces más resolución (el doble de píxeles en altura y el doble de píxeles en anchura) que
+                    las
+                    pantallas HD de 720p.
+                </p>
+                <p class="parrafopantallas">Como ves, hasta este momento las pantallas normales se nombraban con la
+                    resolución
+                    vertical (720p, 1080p, 1440p…), sin embargo, a partir de ese momento el nombre de la resolución será
+                    la
+                    resolución horizontal.
+                </p>
+                <p class="parrafopantallas">Como a este formato le ha pillado entre medias de la transición, a veces se
+                    le llama
+                    de manera incorrecta como 2K. Y digo incorrecta porque la resolución 2K (refiriéndonos a la nueva
+                    moda, la
+                    horizontal) sería la resolución 2048 x 1080 que se usaba en el mundo del cine antes de llegar el 4K.
+                </p>
+                <h2 class="titulo-pantalla">Resolución UHD Vs. 4K</h2>
+                <p class="parrafopantallas">Aunque se confundan a menudo, las resoluciones UHD y 4K no son iguales. Como
+                    hemos visto en la tabla, la resolución UHD tiene 3840 x 2160 píxeles, mientras que la resolución 4K
+                    tiene 4096 x 2160 píxeles. Es un poco más ancha.
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- Botón de regreso arriba -->
     <div class="boton_contenedor">
         <div class="botonarriba">

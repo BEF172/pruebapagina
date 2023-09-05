@@ -136,10 +136,8 @@ nav a:hover {
 }
 
 /* Estilos para los títulos de secciones */
-.titulo-tecnologias,
+
 .tituloVGACONTENIDO,
-.titulo-ergonomia,
-.titulo-conectores,
 .titulocontenidopantallas {
     font-family: 'helveticablack', sans-serif;
     color: white;
@@ -149,6 +147,41 @@ nav a:hover {
     margin-left: 10%;
     margin-right: 10%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.titulo-tecnologias,
+.titulo-ergonomia,
+.titulo-conectores {
+    font-family: 'helveticablack', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    background-color: #05498d;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s linear;
+    /* Transición lineal de 0.5 segundos */
+    transform: scale(1);
+    /* Establecer la escala inicial */
+    transform-origin: center;
+    /* Punto de origen centrado */
+}
+
+.titulo-tecnologias:hover,
+.titulo-ergonomia:hover,
+.titulo-conectores:hover {
+    transform: scale(1.1);
+}
+
+.titulo-conectores a.tituloaconectores,
+.titulo-tecnologias a.titulotecnologias,
+.titulo-ergonomia a.tituloergonomia {
+    text-decoration: none;
+    color: inherit;
+
 }
 
 /* Estilos para párrafos de texto */
@@ -225,10 +258,12 @@ section h2 {
         width: 0rem;
         height: 0rem;
     }
+
     50% {
         width: 15px;
         height: 15px;
     }
+
     100% {
         width: 6.6rem;
         height: 6.6rem;
@@ -287,6 +322,7 @@ section h2 {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     background-color: white;
     border-radius: 15px;
+    transition: all 0.3s ease;
 }
 
 /* Estilos al pasar el cursor sobre las imágenes de conectores */
@@ -366,7 +402,8 @@ section h2 {
 
 /* Estilos para los párrafos de texto en la sección de conectores */
 .parrafoconectores,
-.parrafoVGACONTENIDO, .parrafoDVICONTENIDO,
+.parrafoVGACONTENIDO,
+.parrafoDVICONTENIDO,
 .parrafoHDMICONTENIDO,
 .parrafoDISPLAYPORTCONTENIDO {
     font-family: 'Helvetica Light', sans-serif;
@@ -561,7 +598,7 @@ section h2 {
 
 /* Estilos para la barra lateral (aside) */
 aside {
-    margin-left: -15px;
+    margin-left: auto;
 }
 
 /* Estilos para los elementos dentro del aside */
